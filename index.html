@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TestApp</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"><!--делает кроссбраузерным-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="app">
+
+	<!--Авторизация-->
+	<section class="js-authorisation is-active">
+		<h1 class="heading">Авторизация</h1>
+		<form action="#" class="authorisation authorisation-form">
+			<label class="label">
+				<h2 class="label-text">Логин</h2>
+				<input id="inputLogin" class="input" type="text" placeholder="Введите логин" value="Administrator">
+			</label>
+			<label class="label">
+				<h2 class="label-text">Пароль</h2>
+				<input id="inputPassword" class="input" type="text" placeholder="Введите пароль" value="12345">
+			</label>
+			<button class="button">Войти</button>
+		</form>
+	</section>
+
+	<!--Ошибка при авторизации-->
+	<section class="js-error">
+		<div class="icon"></div>
+		<h1 class="heading">Ошибка</h1>
+		<h2 class="error-text">Введен неверный логин или пароль</h2>
+		<button class="button reset-btn">Попробовать еще раз</button>
+	</section>
+
+	<!--Тесты-->
+	<section data-id="tests" class="js-tests">
+
+		<button class="button create-btn">Создать тест</button>
+
+		<div class="tests-block"></div>
+		
+	</section>
+
+	<!--Пользователи-->
+	<section data-id="users" class="js-users">
+
+		<div class="users-block"></div>
+
+	</section>	
+	
+	<!--Выход из учетной записи-->
+	<section class="js-exit-area">
+		<div class="js-exit">	
+			<h1>Вы уверены, что хотите выйти из учетной записи</h1>
+			<div class="exit-btns">
+				<button data-id="yes" class="button">Да</button>
+				<button data-id="no" class="button">Нет</button>	
+			</div>
+		</div>	
+	</section>
+
+	<!--Создание теста-->
+	<section class="js-create-tests">
+		<div class="js-create-tests-area"></div>
+		<div class="js-create-tests-body">
+			<form id="create-form" faction="#" class="create-tests-form">
+				<label class="label">
+					<h2 class="label-text">Название теста</h2>
+					<input class="input test-name" type="text" placeholder="Введите название теста" value="Тест 2">
+				</label>
+
+				<div class="questions-block"></div>
+			
+				<button class="button add-question">Добавить вопрос</button>				
+				<button class="button add-test">Добавить тест</button>
+			</form>
+		</div>	
+	</section>
+
+	<!--Статистика пользователя-->
+	<section class="js-user-info">
+		<div class="js-user-info-area"></div>
+		<div class="js-user-info-body">
+			
+			<div class="user-tests-block">
+				<h1>Выберете тест: </h1>
+				<select></select>
+			</div>
+			
+
+			<div class="user-info-block">
+				
+				<div class="user-info-block-header"></div>
+			
+				<div class="user-tries-list"></div>
+
+			</div>
+			
+		</div>	
+	</section>
+	
+
+</main>
+	<script type="module" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<userItems>
+	<userItem>
+		<id>1</id>
+		<name>Пользователь 1</name>
+	</userItem>
+	<userItem>
+		<id>2</id>
+		<name>Пользователь 2</name>
+	</userItem>
+	<userItem>
+		<id>3</id>
+		<name>Пользователь 3</name>
+	</userItem>
+	<userItem>
+		<id>4</id>
+		<name>Пользователь 4</name>
+	</userItem>
+</userItems>
